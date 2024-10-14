@@ -15,9 +15,6 @@
         <!-- Incluir DataTables -->
         <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
         <!-- Incluir Archivos Estáticos CSS -->
-        {% comment %}
-            <link rel="stylesheet" href="{% static 'Personero/css/style.css' %}">
-        {% endcomment %}
         <!-- Incluir Bloque de Estilos -->
         {% block styles %} {% endblock %}
     </head>
@@ -43,13 +40,7 @@
         <!-- Incluir DataTables -->
         <script type="text/javascript" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
         <!-- Incluir Archivos Estáticos JavaScript -->
-        {% comment %}
-            <script src="{% static 'Personero/js/script.js' %}"></script>
-        {% endcomment %}
         <script src="{% static 'Personero/js/initializeDataTables.js' %}"></script>
-        {% comment %}
-            <script src="{% static 'Personero/js/themeBasedOnPreference.js' %}"></script>
-        {% endcomment %}
         <!-- Incluir Bloque de Scripts -->
         {% block scripts %} {% endblock %}
     </body>
